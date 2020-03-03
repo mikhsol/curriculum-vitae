@@ -10,7 +10,6 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -21,9 +20,9 @@
 \addtolength{\oddsidemargin}{-0.375in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{0.5in}
 \addtolength{\textheight}{1.0in}
-
+\addtolength{\voffset}{-1in}
 \urlstyle{same}
 
 \raggedbottom
@@ -68,7 +67,7 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large{Mikhail Solodovnikov}} & \textbf{January 2019}\\
+  \textbf{\Large{Mikhail Solodovnikov}} & \textbf{March 2020}\\
    Email: \href{mailto:miksolodovnikov@gmail.com}{miksolodovnikov@gmail.com}\\
 %   LinkedIn \\
    LinkedIn: \href{https://www.linkedin.com/in/mikhsol}{mikhsol}\\
@@ -95,13 +94,23 @@
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+
+   \resumeSubheading
+      {\href{https://amazon.com}{Amazon}}{Dublin}
+      {Software Development Engineer, SES}{June. 2019 -- Recently}
+      \resumeItemListStart
+        \resumeItem{Software Engineering}
+                   {Design and develop highly scalable distributed software systems. Work on implementing continues deployment pipelines.}
+        \resumeItem{Operations}
+                   {Supporting system being higly available and meeting SLAs. Mitigate system wide, high impact issues.}
+    \resumeItemListEnd
   
    \resumeSubheading
       {\href{https://tencoins.org}{Tencoins}}{Malta}
       {Software Engineer}{June. 2018 -- Jan. 2019}
       \resumeItemListStart
         \resumeItem{Software Engineering}
-          {Design and build a core of cryptocurrency exchange service with microservice architecture. Create cryptocurrency wallets for Bitcoin, Ethereum, Tether (Omni layer).}
+          {Design and develop core for cryptocurrency exchange service with microservice architecture. Create cryptocurrency wallets for Bitcoin, Ethereum, Tether (Omni layer).}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -109,12 +118,12 @@
       {IT Consultant}{Sep. 2016 -- June. 2018}
       \resumeItemListStart
         \resumeItem{Consulting in IT}
-          {Research project domain. Build web-services (services with Django/Django REST, Postgres, AngularJS/ReactJS, mobile apps with Ionic).}
+          {Research projects domain. Build web-services (services with Django/Django REST, Postgres, AngularJS/ReactJS, mobile apps with Ionic).}
     \resumeItemListEnd
 
     \resumeSubheading
-      {\href{http://votetour.com}{Votetour}}{}
-      {CEO, CTO}{Mar. 2017 -- Sep. 2017}
+      {Votetour}{}
+      {CTO}{Mar. 2017 -- Sep. 2017}
       \resumeItemListStart
         \resumeItem{Management}
           {Arrange software engineering workflow with continuous integration and test driven development practices.}
@@ -124,9 +133,8 @@
           {Requirement analysis, architecture, design, and development cloud based platform for tourist collaboration, arrangement, and booking charter air flights through the world; a platform for partners airlines to arrange charter flights for a group of tourists.}
     \resumeItemListEnd
 
-
     \resumeSubheading
-      {Nebulytics}{Moscow, Russia}
+      {\href{http://nebulytics.com}{Nebulytics}}{Moscow, Russia}
       {Software Engineer}{May 2015 -- Sep. 2016}
       \resumeItemListStart
         \resumeItem{Platform Development}
@@ -134,7 +142,7 @@
         \resumeItem{Consulting}
           {Requirement analysis, architecture, design, and development solutions for company customers, using Nebulytics platform.}
         \resumeItem{DevOps}
-          {Tuning Nginx load balancer. Config the Elasticsearch/Logstash/Kibana stack for server performance monitoring. Write scripts for serving existing code (bash, Perl).}
+          {Tuning load balancers. Configure the Elasticsearch/Logstash/Kibana stack for server performance monitoring. Work on tools serving existing code base (bash, Perl).}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -176,13 +184,13 @@ Application research a behavior of sensors under conditions of temperature chang
   \resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
+\section{Skills}
   \resumeSubHeadingListStart
     \item{
-      \textbf{Languages}{: Python, Java, Javascript, SQL, Go}
+      \textbf{Languages}{: Python, Java, Go}
       %\hfill
       \\
-      \textbf{Technologies}{: Linux, CI, TDD, Agile, Django/Django REST, Asyncio, Microservices, Postgres, REST, Blockchain, RDBMS, Git, Redis}
+      \textbf{Technologies}{: Linux, CI/CD, TDD, Agile, Microservices, Blockchain, Distributed Systems}
     }
   \resumeSubHeadingListEnd
 
