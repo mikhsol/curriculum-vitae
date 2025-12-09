@@ -67,7 +67,7 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large{Mikhail Solodovnikov}} & \textbf{July 2024}\\
+  \textbf{\Large{Mikhail Solodovnikov}} & \textbf{December 2025}\\
    Email: \href{mailto:miksolodovnikov@gmail.com}{miksolodovnikov@gmail.com}\\
 %   LinkedIn \\
    LinkedIn: \href{https://www.linkedin.com/in/mikhsol}{mikhsol}\\
@@ -99,8 +99,22 @@
       {\href{https://microsoft.com/}{Microsoft}}{Dublin}
       {Senior Software Development Engineer, OMEX}{April 2024 -- Currently}
       \resumeItemListStart
-        \resumeItem{Software Engineering}
-                   {Design and developed features for Word Web application.}
+        \resumeItem{Software Engineering}{
+          \begin{itemize}
+            \item Architected and launched a secure CI/CD pipeline for Word Web components, embedding compliance gates and eliminating manual release steps to accelerate delivery cadence.
+            \item Built telemetry and dashboards for binary-size and performance guardrails, enabling proactive regression detection across every pipeline stage.
+            \item Led the DWriteCore code/data-reduction effort, shrinking the text-rendering binary by 17\% and directly improving cold-boot KPIs.
+            \item Designed and analyzed iterative A/B experiments that quantified boot-performance trade-offs of new components, informing investment decisions with session-mix insights.
+          \end{itemize}
+        }
+        \resumeItem{Operations}
+                    {Own production support for Word Web, triage incidents end-to-end, and drive reliability/root-cause remediations across service teams.}
+        \resumeItem{Collaboration} {
+          \begin{itemize}
+            \item Surface team-level productivity blockers, craft learning plans to amplify execution capacity.
+            \item Facilitate cross-org syncs to align roadmaps, codify shared practices, and remove dependencies that slow delivery.
+          \end{itemize}
+        }
     \resumeItemListEnd
 
    \resumeSubheading
